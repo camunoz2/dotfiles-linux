@@ -3,7 +3,7 @@
 
 # Include some files
 !.gitignore
-!.README.md
+!README.md
 !.zshrc
 
 # Include folders
