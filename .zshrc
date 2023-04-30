@@ -1,2 +1,0 @@
-path+=('~/appimages')
-export PATH
