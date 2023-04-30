@@ -1,0 +1,12 @@
+# Block all the contents of this folder
+/*
+
+# Include some files
+!.gitignore
+!.README.md
+!.zshrc
+
+# Include folders
+!alacritty/
+!nvim/
+!scripts/
