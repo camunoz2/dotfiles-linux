@@ -1,5 +1,5 @@
 # Import appimages directory to PATH
-export PATH=/home/camunoz2/appimages:$PATH
+export PATH=$HOME/appimages:$PATH
 
 # ZZSH Autocomplete
 autoload -Uz compinit
@@ -7,12 +7,12 @@ compinit
 _comp_options+=(globdots)
 
 # Fast Node Manager
-export PATH="/home/camunoz2/.local/share/fnm:$PATH"
+export PATH="$HOME/.local/share/fnm:$PATH"
 eval "`fnm env`"
 eval "$(fnm env --use-on-cd)"
 
 # Hotkay for tmux-sessionizer
-alias tmux-sessionizer="~/.config/scripts/tmux-sessionizer"
+alias tmux-sessionizer="$HOME/.config/scripts/tmux-sessionizer"
 bindkey -s "^f" "tmux-sessionizer\n"
 
 # Allows for prompt expansion based on directory structure
@@ -50,6 +50,9 @@ function git_status {
 
 # Call the function for coloring 
 alias ls='ls --color=always'
+
+# Must clone the repo first!!
+source $HOME/.config/zsh/zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Set the prompt
 PROMPT='$(git_status)%F{yellow}%1~%f> '
