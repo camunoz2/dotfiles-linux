@@ -15,6 +15,9 @@ eval "$(fnm env --use-on-cd)"
 alias tmux-sessionizer="$HOME/.config/scripts/tmux-sessionizer"
 bindkey -s "^f" "tmux-sessionizer\n"
 
+# Delete key.. delete this line if its not needed
+bindkey  "^[[3~"  delete-char
+
 # Allows for prompt expansion based on directory structure
 setopt PROMPT_SUBST
 
