@@ -25,6 +25,10 @@ vim.keymap.set("n", "N", "Nzzzv")
 -- Disble Q
 vim.keymap.set("n", "Q", "<nop>")
 
+-- Zen mode
+vim.keymap.set("n", "<A-z>", ":ZenMode<CR>")
+
+
 -- Telescope keymaps
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
