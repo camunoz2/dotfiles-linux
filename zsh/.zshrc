@@ -1,5 +1,8 @@
-# Import appimages directory to PATH
-export PATH=$HOME/appimages:$PATH
+# Import nvim directory to PATH
+export PATH=$HOME/nvim:$PATH
+
+# Import webpc to PATH
+export PATH=$PATH:$HOME/webp/bin
 
 # ZZSH Autocomplete
 autoload -Uz compinit

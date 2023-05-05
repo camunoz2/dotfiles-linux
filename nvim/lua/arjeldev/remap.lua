@@ -24,6 +24,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 -- Disble Q
 vim.keymap.set("n", "Q", "<nop>")
+vim.keymap.set("n", "q", "<nop>")
 
 -- Zen mode
 vim.keymap.set("n", "<A-z>", ":ZenMode<CR>")
@@ -32,7 +33,8 @@ vim.keymap.set("n", "<A-z>", ":ZenMode<CR>")
 -- Telescope keymaps
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
--- vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+vim.keymap.set('n', '<C-p>', builtin.git_files, {})
+vim.keymap.set('n', '<leader>ps', builtin.live_grep, {})
 
 -- Select All
 vim.keymap.set('n', '<C-a>', 'gg<S-v>G')
