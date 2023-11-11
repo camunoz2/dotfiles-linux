@@ -12,6 +12,7 @@
 3. neovim
 4. zsh
 5. tmux
+6. fnm (fast node manager)
 
 ## Administration
 1. yay (for AUR packages)
