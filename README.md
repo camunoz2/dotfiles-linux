@@ -13,6 +13,7 @@
 4. zsh
 5. tmux
 6. fnm (fast node manager)
+7. fzf
 
 ## Administration
 1. yay (for AUR packages)
